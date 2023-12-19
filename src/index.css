@@ -4,77 +4,77 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: white;
-  color: #000;
-}
-
 body {
   min-height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1.5rem;
-}
-
-input,
-textarea,
-button,
-select {
-  font: inherit;
-  margin-bottom: 1em;
+  color: #000;
+  background-color: #f8f8f8;
 }
 
 header {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  background-color: purple;
-  color: whitesmoke;
+  align-items: center;
+  background-color: #6930c3;
+  color: #fff;
   position: sticky;
   top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
 }
 
 nav ul {
   list-style-type: none;
+  display: flex;
 }
 
 nav ul li {
-  display: inline-block;
   margin-right: 1rem;
+  background-color: #25045a;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 
-nav a, nav a:visited {
+nav a,
+nav a:visited {
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-nav a:hover, nav a:focus {
-  text-decoration: underline;
+nav a:hover,
+nav a:focus {
+  color: #ffd700;
 }
 
 main {
-  max-width: 500px;
+  max-width: 800px;
   margin: auto;
+  padding: 1rem;
 }
 
 section {
-  margin-top: 1em;
+  margin-top: 2rem;
 }
 
 article {
-  margin: 0.5em;
-  border: 1px solid #000;
-  border-radius: 10px;
-  padding: 1em;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  color: #333;
 }
 
 h2 {
@@ -82,49 +82,82 @@ h2 {
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.4;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
   font-size: 1.2rem;
-  margin: 0.5em 0;
+  margin: 1rem 0;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 
 textarea {
-  height: 200px;
+  height: 150px;
+  resize: vertical;
 }
 
 .postCredit {
   font-size: 1rem;
+  color: #555;
 }
 
-.postCredit a, 
+.postCredit a,
 .postCredit a:visited {
   margin-right: 0.5rem;
-  color: black;
+  color: #333;
+  transition: color 0.3s ease;
 }
 
-.postCredit a:hover, 
+.postCredit a:hover,
 .postCredit a:focus {
-  color: hsla(0, 0%, 0%, 0.75);
+  color: #6930c3;
 }
 
 .excerpt {
   font-style: italic;
+  color: #777;
 }
 
 .reactionButton {
-  margin: 0 0.25em 0 0;
+  margin: 0 0.5em 0 0;
   background: transparent;
   border: none;
-  color: #000;
+  color: #333;
   font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.reactionButton:hover {
+  color: #ff6347;
+}
+
+.saveButton,
+.deleteButton {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.saveButton {
+background-color: #777;
 }
 
 .deleteButton {
-  background-color: palevioletred;
-  color: white;
+background-color: #bf4646;
+}
+
+.saveButton:hover {
+  background-color: #32cd32;
+}
+
+.deleteButton:hover { 
+  background-color: #d63031;
 }

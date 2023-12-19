@@ -72,6 +72,7 @@ const AddPostForm = () => {
                     onChange={onContentChanged}
                 />
                 <button
+                    className="saveButton"
                     type="button"
                     onClick={onSavePostClicked}
                     disabled={!canSave}
